@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --background: 240 10% 4%;
+    --foreground: 0 0% 93%;
+    --card: 240 8% 7%;
+    --card-foreground: 0 0% 93%;
+    --popover: 240 8% 7%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 220 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 12%;
+    --secondary-foreground: 0 0% 80%;
+    --muted: 240 5% 14%;
+    --muted-foreground: 240 5% 50%;
+    --accent: 240 5% 16%;
+    --accent-foreground: 0 0% 93%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5% 14%;
+    --input: 240 5% 16%;
+    --ring: 220 70% 55%;
+    --mode-focus: 220 70% 55%;
+    --mode-money: 152 60% 45%;
+    --mode-creative: 32 95% 55%;
+    --mode-life: 270 50% 60%;
+    --radius: 0.75rem;
+    --sidebar-background: 240 10% 5%;
+    --sidebar-foreground: 0 0% 80%;
+    --sidebar-primary: 220 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 12%;
+    --sidebar-accent-foreground: 0 0% 93%;
+    --sidebar-border: 240 5% 12%;
+    --sidebar-ring: 220 70% 55%;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
